@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr" data-primary-interaction-mode="mouse">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="base-uri &#39;self&#39;; object-src &#39;none&#39;; script-src &#39;self&#39; idmsauth-uat.corp.apple.com idmsauth-stable.corp.apple.com appleid-ut.corp.apple.com *.cdn-apple.com cdn.apple-mapkit.com js-cdn.music.apple.com &#39;sha256-Ho3jyXcgtz4TlFbROvBDArKhAcomUqEAneVwsmBR/2M=&#39; &#39;sha256-JFJvxqMr7d0c5kvkhpyFwvNHHhwfiIFw0UaFnTp+u9M=&#39; &#39;sha256-vJ5mFGfjId2WxvUAs1u12GoYOfwqxaNG/K7IqHBEroc=&#39; &#39;sha256-26W8JbT1vQArZ+8F3eitbNZVzh5WonwHlQl29E4pato=&#39; &#39;sha256-svdOQzSg9T05h6Q3mC/8FCU+2bG3vWTBwdPa+czq+YY=&#39; &#39;sha256-HenvlWVrAISuwfRzCus0xoCe+m4/jV6vXViy4FodZC8=&#39; &#39;sha256-YbXuo1Hm8OzDuRTilXkMrgcIOwquhx53sFmq1Yjx2mg=&#39;; style-src &#39;self&#39; data: &#39;unsafe-inline&#39; *.apple.com *.cdn-apple.com fonts.googleapis.com; default-src &#39;none&#39;; child-src &#39;self&#39;; worker-src blob:; connect-src blob: &#39;self&#39; data: *.apple.com *.cdn-apple.com *.icloud.com *.icloud.com.cn *.icloud-content.com *.icloud-content.com.cn *.apple-mapkit.com; frame-src blob: &#39;self&#39; *.apple.com; font-src blob: &#39;self&#39; data: *.apple.com *.cdn-apple.com fonts.gstatic.com; img-src blob: &#39;self&#39; data: *.apple.com *.apple-mapkit.com *.cdn-apple.com *.icloud-content.com *.icloud-content.com.cn *.icloud.com *.icloud.com.cn *.mzstatic.com; media-src blob: &#39;self&#39; data: *.apple.com *.cdn-apple.com *.apple-mapkit.com"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it-it" />
+    <meta property="og:site_name" content="Inviti" />
+    <link
+      rel="canonical"
+      property="og:url"
+      href="https://www.icloud.com/invites/081GhoeKucAW8_6Xb_41FQbvg"
+    />
+
+    <meta
+      property="og:image"
+      content="https://www.icloud.com/opengraph/invites/081GhoeKucAW8_6Xb_41FQbvg.jpeg"
+    />
+    <meta
+      itemprop="image"
+      content="https://www.icloud.com/opengraph/invites/081GhoeKucAW8_6Xb_41FQbvg.jpeg"
+    />
+
+    <link rel="preload" as="script" href="./Inviti_files/main.js" />
+
+    <!-- <script type="text/javascript">
+      (function () {
+        var html = document.documentElement;
+        var buildNumberAttribute = "data-cw-private-build-number";
+        var masteringNumberAttribute = "data-cw-private-mastering-number";
+
+        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS = {
+          buildNumber: html.getAttribute(buildNumberAttribute),
+          masteringNumber: html.getAttribute(masteringNumberAttribute),
+          locale: html.getAttribute("lang"),
+        };
+        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles = [];
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles.push(
+        "/applications/invites/2528Project31/it-it/main.js"
+      );
+    </script>
+
+    <script type="text/javascript">
+      "use strict";
+      var _CW_BUILD_INFO = window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS,
+        filterIndexHtml = ".*\\/index\\.html",
+        filterMainJs = ".*(" + _CW_BUILD_INFO.jsFiles.join("|") + ")",
+        regexIndexHtml = new RegExp(filterIndexHtml),
+        regexMainJs = new RegExp(filterMainJs);
+      function logMessageToParent(a, b) {
+        if (
+          !(
+            (window && window.parent && window === window.parent) ||
+            !window.parent.postMessage
+          )
+        ) {
+          var c = window.location.pathname,
+            d = _CW_BUILD_INFO.buildNumber,
+            e = _CW_BUILD_INFO.masteringNumber;
+          window.parent.postMessage(
+            JSON.stringify({
+              appName: c,
+              buildNumber: d,
+              masteringNumber: e,
+              args: [a, b],
+              isCloudOSMessage: !0,
+              methodName: "recordApplicationMessage",
+            }),
+            "*"
+          );
+        }
+      }
+      function buildMessageFromErrorEvent(a) {
+        var b = a.detail,
+          c = b.error;
+        return {
+          error: c && c.message ? c.message : b.message,
+          url: b.filename,
+          lineNumber: b.lineno,
+          columnNumber: b.colno,
+          stack: c ? c.stack : "not available",
+        };
+      }
+      function defaultErrorFilter(a) {
+        var b = a.filename;
+        if (!b || regexIndexHtml.test(b)) {
+          var c = a.error && a.error.stack;
+          if (c) {
+            var d = c.split("\n");
+            if (((b = d[1] || d[0]), /^@user-script/.test(c))) return !1;
+          }
+        }
+        return regexMainJs.test(b);
+      }
+      function defaultFatalErrorHandler(a) {
+        var b = buildMessageFromErrorEvent(a);
+        (b.isFatal = !0), logMessageToParent("OnFatalError", b);
+      }
+      function defaultNonFatalErrorHandler(a) {
+        var b = buildMessageFromErrorEvent(a);
+        (b.isFatal = !1), logMessageToParent("OnNonFatalError", b);
+      }
+      function buildMessageFromRejectionEvent(a) {
+        var b = a.detail,
+          c = b.nativeEvent.reason;
+        if (!(c instanceof Error)) return { error: "unknown" };
+        var d = c.stack || {};
+        if ("string" != typeof d) return { error: "unknown" };
+        var e = c.message || c.name || (d.match(/^.{0,80}/) || [""])[0],
+          f = d.match(/(?:at |@)(.+?):([0-9]+):([0-9]+)/);
+        return f
+          ? {
+              error: e,
+              url: f[1],
+              lineNumber: f[2],
+              columnNumber: f[3],
+              stack: d,
+            }
+          : { error: e, stack: d };
+      }
+      function defaultUnhandledRejectionFilter(a) {
+        var b = a.reason;
+        if (b) {
+          var c,
+            d = b.stack,
+            e = b.sourceURL;
+          if (e) c = e;
+          else if (d) {
+            var f = d.split("\n");
+            if (((c = f[1] || f[0]), /^@user-script/.test(d))) return !1;
+          }
+          return regexMainJs.test(c);
+        }
+        return !1;
+      }
+      function defaultFatalUnhandledRejectionHandler(a) {
+        var b = buildMessageFromRejectionEvent(a);
+        (b.isFatal = !0), logMessageToParent("OnFatalUnhandledRejection", b);
+      }
+      function defaultNonFatalUnhandledRejectionHandler(a) {
+        var b = buildMessageFromRejectionEvent(a);
+        (b.isFatal = !1), logMessageToParent("OnNonFatalUnhandledRejection", b);
+      }
+      window.__globalErrorCatcherDefaults = {
+        defaultErrorFilter: defaultErrorFilter,
+        defaultFatalErrorHandler: defaultFatalErrorHandler,
+        defaultNonFatalErrorHandler: defaultNonFatalErrorHandler,
+        defaultUnhandledRejectionFilter: defaultUnhandledRejectionFilter,
+        defaultFatalUnhandledRejectionHandler:
+          defaultFatalUnhandledRejectionHandler,
+        defaultNonFatalUnhandledRejectionHandler:
+          defaultNonFatalUnhandledRejectionHandler,
+      };
+    </script>
+
+    <script type="text/javascript">
+      "use strict";
+      try {
+        var event = new window.CustomEvent("test", { cancelable: !0 });
+        event.preventDefault();
+      } catch (a) {
+        var PolyFillCustomEvent = function (a, b) {
+          var c;
+          return (
+            (b = b || { bubbles: !1, cancelable: !1, detail: void 0 }),
+            (c = document.createEvent("CustomEvent")),
+            c.initCustomEvent(a, b.bubbles, b.cancelable, b.detail),
+            c
+          );
+        };
+        (PolyFillCustomEvent.prototype = window.Event.prototype),
+          (window.CustomEvent = PolyFillCustomEvent);
+      }
+      var globalDefaults = window.__globalErrorCatcherDefaults,
+        defaultErrorFilter = globalDefaults.defaultErrorFilter,
+        defaultFatalErrorHandler = globalDefaults.defaultFatalErrorHandler,
+        defaultNonFatalErrorHandler =
+          globalDefaults.defaultNonFatalErrorHandler,
+        defaultUnhandledRejectionFilter =
+          globalDefaults.defaultUnhandledRejectionFilter,
+        defaultFatalUnhandledRejectionHandler =
+          globalDefaults.defaultFatalUnhandledRejectionHandler,
+        defaultNonFatalUnhandledRejectionHandler =
+          globalDefaults.defaultNonFatalUnhandledRejectionHandler;
+      (function () {
+        function a(a) {
+          var c,
+            d = "";
+          (d = b(a) ? "FatalError" : "NonFatalError"),
+            (c = new CustomEvent(d, {
+              detail: {
+                error: a.error,
+                message: a.message,
+                filename: a.filename,
+                lineno: a.lineno,
+                colno: a.colno,
+              },
+            })),
+            window.dispatchEvent(c);
+        }
+        var b = defaultErrorFilter;
+        window.addEventListener("FatalError", defaultFatalErrorHandler),
+          window.addEventListener("NonFatalError", defaultNonFatalErrorHandler),
+          window.addEventListener("error", a),
+          (window.__startFilteringErrors = function (a, c, d) {
+            (b = a),
+              window.removeEventListener(
+                "FatalError",
+                defaultFatalErrorHandler
+              ),
+              window.removeEventListener(
+                "NonFatalError",
+                defaultNonFatalErrorHandler
+              ),
+              c &&
+                d &&
+                (window.addEventListener("FatalError", c),
+                window.addEventListener("NonFatalError", d)),
+              (window.__startFilteringErrors = function () {
+                throw new Error(
+                  "__startFilteringErrors can currently only be invoked once"
+                );
+              });
+          });
+      })(),
+        (function () {
+          function a(a) {
+            var c,
+              d = "";
+            (d = b(a)
+              ? "FatalUnhandledRejection"
+              : "NonFatalUnhandledRejection"),
+              (c = new CustomEvent(d, { detail: { nativeEvent: a } })),
+              window.dispatchEvent(c);
+          }
+          var b = defaultUnhandledRejectionFilter;
+          window.addEventListener(
+            "FatalUnhandledRejection",
+            defaultFatalUnhandledRejectionHandler
+          ),
+            window.addEventListener(
+              "NonFatalUnhandledRejection",
+              defaultNonFatalUnhandledRejectionHandler
+            ),
+            window.addEventListener("unhandledrejection", a),
+            (window.__startFilteringUnhandledRejections = function (a, c, d) {
+              (b = a),
+                window.removeEventListener(
+                  "FatalUnhandledRejection",
+                  defaultFatalUnhandledRejectionHandler
+                ),
+                window.removeEventListener(
+                  "NonFatalUnhandledRejection",
+                  defaultNonFatalUnhandledRejectionHandler
+                ),
+                c &&
+                  d &&
+                  (window.addEventListener("FatalUnhandledRejection", c),
+                  window.addEventListener("NonFatalUnhandledRejection", d)),
+                (window.__startFilteringUnhandledRejections = function () {
+                  throw new Error(
+                    "__startFilteringUnhandledRejections can currently only be invoked once"
+                  );
+                });
+            });
+        })();
+    </script> -->
+
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="preload" as="script" href="./Inviti_files/main.js" />
+
+    <link rel="preload" as="style" href="./Inviti_files/main.css" />
+
+    <link
+      rel="preload"
+      as="style"
+      href="https://www.apple.com/wss/fonts/?families=New+York+Medium,v1:600|SF+Pro+Rounded,v1:600"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="https://www.icloud.com/fonts/SFNSText-Semibold.woff"
+      fetchpriority="low"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="https://www.apple.com/wss/fonts/SF-Pro-Rounded/v1/sf-pro-rounded_regular.woff2"
+      fetchpriority="low"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      href="https://www.apple.com/wss/fonts/New-York-Medium/v1/new-york-medium_regular.woff2"
+      fetchpriority="low"
+      crossorigin="anonymous"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>70 Anni Domenico</title>
+
+    <link rel="icon" href="https://www.icloud.com/favicon.ico" />
+
+    <script type="text/javascript">
+      (function () {
+        var html = document.documentElement;
+        var pathPrefixAttribute = "data-cw-private-path-prefix";
+        var buildNumberAttribute = "data-cw-private-build-number";
+        var masteringNumberAttribute = "data-cw-private-mastering-number";
+
+        window.__CW_PATH_PREFIX = html.getAttribute(pathPrefixAttribute);
+        window.__CW_BUILD_INFO = {
+          buildNumber: html.getAttribute(buildNumberAttribute),
+          masteringNumber: html.getAttribute(masteringNumberAttribute),
+          locale: html.getAttribute("lang"),
+        };
+
+        html.removeAttribute(pathPrefixAttribute);
+        html.removeAttribute(buildNumberAttribute);
+        html.removeAttribute(masteringNumberAttribute);
+      })();
+    </script>
+
+    <style>
+      .mk-map-view {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+      .mk-map-view.mk-dragging-annotation {
+        cursor: none;
+      }
+      .mk-map-view.mk-disable-all-gestures {
+        touch-action: none;
+      }
+      .mk-map-view.mk-disable-pinch-gestures {
+        touch-action: pan-x pan-y;
+      }
+      .mk-map-view.mk-disable-zoom-gestures {
+        touch-action: manipulation;
+      }
+      .mk-map-view.mk-disable-pan-gestures {
+        touch-action: none;
+        touch-action: pinch-zoom;
+      }
+      div.mk-map-view.mk-map-view img,
+      div.mk-map-view.mk-map-view svg {
+        margin: 0;
+        padding: 0;
+      }
+      .mk-annotation-container,
+      .mk-map-view {
+        z-index: 0;
+      }
+      .mk-map-view > * {
+        position: absolute;
+        left: 0;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      .mk-map-view .rt-root {
+        letter-spacing: initial;
+      }
+      .mk-map-view .mk-font-size-detector {
+        position: absolute;
+        height: 1em;
+        visibility: hidden;
+        left: -100%;
+        -webkit-text-size-adjust: none;
+      }
+      .mk-controls-container {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        pointer-events: none;
+      }
+      .mk-map-view.mk-dragging-cursor {
+        cursor: grabbing;
+      }
+      .mk-map-view > iframe {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0;
+        border: 0;
+      }
+    </style>
+    <style type="text/css"></style>
+    <style>
+      [_nghost-ng-c2697620354] {
+        font-family: Open Sans, sans-serif;
+        color: #121212;
+      }
+    </style>
+    <style type="text/css"></style>
+    <script crossorigin="anonymous" src="./Inviti_files/mk-csr.js"></script>
+  </head>
+
+  <body apple-system-font-capable="true" cz-shortcut-listen="true" class="">
+    <script type="text/javascript" src="./Inviti_files/mapkit.js"></script>
+
+    <script
+      type="text/javascript"
+      src="./Inviti_files/main.js"
+      defer=""
+    ></script>
+
+    <link rel="stylesheet" href="./Inviti_files/main.css" />
+
+    <div id="root" data-appearance="dark">
+      <ui-main-pane>
+        <div class="top-nav-bar hide-blur" data-appearance="dark">
+          <header class="cloudos-toolbar homepage">
+            <svg
+              aria-label="70 Anni Domenico"
+              role="presentation"
+              height="43"
+              class="app-name kern-safe"
+            >
+              <text
+                fill="var(--theme-color-systemYellow)"
+                x="0"
+                y="29"
+                data-testid="app-name"
+              >
+                70 Anni Domenico
+              </text>
+            </svg>
+          </header>
+        </div>
+        <main>
+          <div class="event-page-container" data-layout="full-bleed">
+            <ui-image
+              aria-hidden="true"
+              class="blurred-background-image standard is-loaded"
+              dir="ltr"
+              ><img
+                alt=""
+                src="./Inviti_files/public.jpeg"
+                draggable="false"
+                style="pointer-events: none"
+            /></ui-image>
+            <header class="">
+              <div class="toolbar event-toolbar">
+                <div class="toolbar-contents">
+                  <div class="toolbar-spacer"></div>
+                </div>
+              </div>
+            </header>
+            <div class="view-event-container">
+              <event-content>
+                <image-blur> </image-blur>
+                <event-card data-appearance="dark">
+                  <image-background
+                    ><event-image
+                      ><div
+                        class="image-wrapper"
+                        style="--image-container-height: 525.7142857142858px"
+                      >
+                        <img
+                          src="./Inviti_files/public.jpeg"
+                          srcset=""
+                          alt="Un’immagine dalla persona organizzatrice sull’evento"
+                          style="
+                            --image-scale: 0.5764411027568923;
+                            --image-opacity: 1;
+                            --top-translate: 0px;
+                            --left-translate: calc(50vw - 300px);
+                          "
+                        />
+                      </div>
+                      <div
+                        class="image-wrapper"
+                        style="--image-container-height: 525.7142857142858px"
+                      >
+                        <img
+                          class="flipped-image"
+                          src="./Inviti_files/public.jpeg"
+                          srcset=""
+                          aria-hidden="true"
+                          alt=""
+                          style="
+                            --image-scale: 0.5764411027568923;
+                            --image-opacity: 1;
+                            --top-translate: 525.7142857142858px;
+                            --left-translate: calc(50vw - 300px);
+                          "
+                        /></div></event-image></image-background
+                  ><event-info
+                    ><image-blur></image-blur>
+                    <div class="measuring-title-positioner" aria-hidden="true">
+                      <h1
+                        class="cf-font cf-font-title event-title-heading round"
+                      >
+                        70 Anni… e non sentirli
+                      </h1>
+                    </div>
+                    <event-title class="cf-font round">
+                      <h1
+                        class="cf-font cf-font-title event-title-heading round"
+                      >
+                        70 Anni… e non sentirli
+                      </h1>
+                    </event-title>
+                    <time>ven 5 settembre alle ore 20:30</time>
+                    <address>
+                      <span class="location-title"
+                        >La Veranda del Villeggiante, Reggio di Calabria</span
+                      >
+                    </address></event-info
+                  ></event-card
+                >
+                <div
+                  class="grid-card attendance-selector-widget"
+                  aria-label="Modifica la tua risposta"
+                >
+                  <div class="card-background"></div>
+                  <div class="content">
+                    <div class="attendance-selector">
+                        <!-- Si -->
+                      <ui-button
+                        aria-disabled="false"
+                        class="attendance-option going icloud-touch"
+                        ontouchstart="void(0)"
+                        role="button"
+                        aria-label="Rispondi con Partecipo"
+                        aria-haspopup="dialog"
+                        tabindex="0"
+                      >
+                        <a
+                          class="inline"
+                          href="https://wa.me/393454122171/?text=Presente"
+                        >
+                          <button type="button" tabindex="-1"></button>
+                          <div class="content-wrapper">
+                            <span class="sf-symbol icon" aria-hidden="true">
+                              <svg
+                                viewBox="0 0 102.1480712890625 100.9267578125"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="glyph-box"
+                                style="height: 15.7564px; width: 15.9471px"
+                              >
+                                <g
+                                  transform="matrix(1 0 0 1 -7.470952148437391 85.693359375)"
+                                >
+                                  <path
+                                    d="M59.1797 15.1855C86.7676 15.1855 109.619-7.61719 109.619-35.2539C109.619-62.8418 86.7676-85.6934 59.1309-85.6934C31.543-85.6934 8.74023-62.8418 8.74023-35.2539C8.74023-7.61719 31.5918 15.1855 59.1797 15.1855ZM59.1797 5.27344C36.7188 5.27344 18.7012-12.793 18.7012-35.2539C18.7012-57.7148 36.6699-75.7324 59.1309-75.7324C81.5918-75.7324 99.6582-57.7148 99.707-35.2539C99.707-12.793 81.6406 5.27344 59.1797 5.27344ZM53.9062-12.0605C55.6641-12.0605 57.1777-12.9395 58.2031-14.502L80.0293-48.6328C80.6641-49.6582 81.25-50.8301 81.25-51.9531C81.25-54.3457 79.1016-55.957 76.8066-55.957C75.3418-55.957 74.0234-55.1758 72.998-53.5156L53.7109-22.5586L44.6289-34.1309C43.457-35.6445 42.2852-36.1816 40.8691-36.1816C38.4766-36.1816 36.5723-34.2773 36.5723-31.8359C36.5723-30.6641 37.0117-29.5898 37.8418-28.5645L49.3652-14.502C50.6836-12.793 52.0996-12.0605 53.9062-12.0605Z"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </span>
+                            <div class="response-label">Partecipo</div>
+                          </div>
+                        </a>
+                      </ui-button>
+                        <!-- No -->
+                      <ui-button
+                        aria-disabled="false"
+                        class="attendance-option notGoing icloud-touch"
+                        ontouchstart="void(0)"
+                        role="button"
+                        aria-label="Rispondi con Non partecipo"
+                        aria-haspopup="dialog"
+                        tabindex="0"
+                      >
+                        <a
+                          class="inline"
+                          href="https://wa.me/393454122171/?text=Mi+dispiace+ma+non+protr%C3%B2+essere+presente"
+                        >
+                          <button type="button" tabindex="-1"></button>
+                          <div class="content-wrapper">
+                            <span class="sf-symbol icon" aria-hidden="true">
+                              <svg
+                                viewBox="0 0 102.1480712890625 100.9267578125"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="glyph-box"
+                                style="height: 15.7564px; width: 15.9471px"
+                              >
+                                <g
+                                  transform="matrix(1 0 0 1 -7.470952148437391 85.693359375)"
+                                >
+                                  <path
+                                    d="M59.1797 15.1855C86.7676 15.1855 109.619-7.61719 109.619-35.2539C109.619-62.8418 86.7676-85.6934 59.1309-85.6934C31.543-85.6934 8.74023-62.8418 8.74023-35.2539C8.74023-7.61719 31.5918 15.1855 59.1797 15.1855ZM59.1797 5.27344C36.7188 5.27344 18.7012-12.793 18.7012-35.2539C18.7012-57.7148 36.6699-75.7324 59.1309-75.7324C81.5918-75.7324 99.6582-57.7148 99.707-35.2539C99.707-12.793 81.6406 5.27344 59.1797 5.27344ZM43.1152-14.7461C44.3359-14.7461 45.459-15.1855 46.2891-16.0645L59.1309-28.9551L72.0703-16.0645C72.9004-15.2344 73.9746-14.7461 75.2441-14.7461C77.6855-14.7461 79.6387-16.6992 79.6387-19.1895C79.6387-20.3613 79.1992-21.4355 78.3203-22.2656L65.4297-35.2051L78.3691-48.1934C79.248-49.0723 79.6875-50.0977 79.6875-51.2695C79.6875-53.7109 77.7344-55.6641 75.293-55.6641C74.0723-55.6641 73.0957-55.2246 72.168-54.2969L59.1309-41.3574L46.1914-54.248C45.3613-55.127 44.3359-55.5664 43.1152-55.5664C40.625-55.5664 38.6719-53.6621 38.6719-51.2207C38.6719-50.0488 39.1602-48.9746 40.0391-48.1445L52.9297-35.2051L40.0391-22.2168C39.1602-21.4355 38.6719-20.3613 38.6719-19.1895C38.6719-16.6992 40.625-14.7461 43.1152-14.7461Z"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </span>
+                            <div class="response-label">Non partecipo</div>
+                          </div>
+                        </a>
+                      </ui-button>
+                        <!-- Forse -->
+                      <ui-button
+                        aria-disabled="false"
+                        class="attendance-option maybeGoing icloud-touch"
+                        ontouchstart="void(0)"
+                        role="button"
+                        aria-label="Rispondi con Forse"
+                        aria-haspopup="dialog"
+                        tabindex="0"
+                      >
+                        <a
+                          class="inline"
+                          href="https://wa.me/393454122171/?text=Grazie+per+l%27invito%2C+ti+far%C3%B2+sapere+il+prima+possibile"
+                        >
+                          <button type="button" tabindex="-1"></button>
+                          <div class="content-wrapper">
+                            <span class="sf-symbol icon" aria-hidden="true"
+                              ><svg
+                                viewBox="0 0 102.1480712890625 100.9267578125"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="glyph-box"
+                                style="height: 15.7564px; width: 15.9471px"
+                              >
+                                <g
+                                  transform="matrix(1 0 0 1 -7.470952148437391 85.693359375)"
+                                >
+                                  <path
+                                    d="M59.1797 15.1855C86.7676 15.1855 109.619-7.61719 109.619-35.2539C109.619-62.8418 86.7676-85.6934 59.1309-85.6934C31.543-85.6934 8.74023-62.8418 8.74023-35.2539C8.74023-7.61719 31.5918 15.1855 59.1797 15.1855ZM59.1797 5.27344C36.7188 5.27344 18.7012-12.793 18.7012-35.2539C18.7012-57.7148 36.6699-75.7324 59.1309-75.7324C81.5918-75.7324 99.6582-57.7148 99.707-35.2539C99.707-12.793 81.6406 5.27344 59.1797 5.27344ZM58.0566-25.5371C60.7422-25.5371 62.4512-27.0508 62.5977-29.0527C62.5977-29.248 62.5977-29.4922 62.5977-29.6387C62.7441-32.1777 64.502-33.8867 67.6758-35.9375C72.4609-39.1113 75.5859-41.8945 75.5859-47.5586C75.5859-55.7129 68.2617-60.3516 59.6191-60.3516C51.2695-60.3516 45.5566-56.543 44.043-51.9531C43.75-51.123 43.6035-50.293 43.6035-49.4141C43.6035-47.0703 45.459-45.6055 47.6074-45.6055C50.4883-45.6055 51.123-47.0703 52.6367-48.7793C54.1992-51.2207 56.2988-52.6367 59.1797-52.6367C63.1348-52.6367 65.6738-50.3906 65.6738-47.0703C65.6738-44.043 63.623-42.4805 59.4727-39.5996C56.0059-37.207 53.4668-34.668 53.4668-30.2246L53.4668-29.6875C53.4668-26.9531 55.127-25.5371 58.0566-25.5371ZM58.0078-10.5469C61.1328-10.5469 63.7207-12.8418 63.7207-15.918C63.7207-18.9941 61.1328-21.2402 58.0078-21.2402C54.834-21.2402 52.2949-18.9453 52.2949-15.918C52.2949-12.8418 54.8828-10.5469 58.0078-10.5469Z"
+                                  ></path>
+                                </g>
+                              </svg>
+                            </span>
+                            <div class="response-label">Forse</div>
+                          </div>
+                        </a>
+                      </ui-button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Descrizione -->
+                <div
+                  class="grid-card description-card with-header"
+                  aria-label="Domenico Romeo"
+                >
+                  <div class="card-background"></div>
+                  <div class="card-header">
+                    <ui-button
+                      class="push primary card-header-content actionable icloud-touch"
+                      tabindex="0"
+                      ontouchstart="void(0)"
+                      role="button"
+                      aria-haspopup="dialog"
+                      ><button type="button" tabindex="-1"></button>
+                      <div class="icon-wrapper">
+                        <div
+                          class="ContactPhoto avatar"
+                          style="width: 36px; height: 36px"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="monogram-container"
+                            style="width: 36px; height: 36px"
+                          >
+                            <div aria-hidden="true" class="monogram">
+                              <div class="monogram-text">
+                                <svg viewBox="0 0 28 20">
+                                  <text x="50%" y="75%" text-anchor="middle">
+                                    D
+                                  </text>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <ui-image
+                            class="fade-in no-crop standard is-loaded"
+                            dir="ltr"
+                            style="width: 36px; height: 36px"
+                            ><img
+                              alt="Domenico Romeo"
+                              src="./Inviti_files/${f}(6)"
+                              draggable="false"
+                              style="pointer-events: none"
+                          /></ui-image>
+                        </div>
+                      </div>
+                      <div class="heading">
+                        <h2>Domenico Romeo</h2>
+                        <h3>Nota di chi organizza</h3>
+                      </div></ui-button
+                    >
+                  </div>
+                  <div class="content">
+                    <div class="description-wrapper has-event-description">
+                      <div class="text-wrapper">
+                        <p class="description">
+                          Il tempo passa, ma lo spirito resta GIOVANE! Per
+                          festeggiare questo incredibile traguardo, siete tutti
+                          invitati a una serata di risate, brindisi e ricordi…
+                          con la promessa che non parleremo di acciacchi! 😜
+                          Venite con tanta voglia di divertirvi e magari con
+                          qualche consiglio per arrivare ai prossimi 70! 🥂
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Calendario -->
+                <div
+                  class="grid-card photos-card with-header"
+                  aria-label="Foto"
+                >
+                  <div class="card-background"></div>
+                  <div class="card-header">
+                    <a class="card-header-content">
+                      <div class="icon-wrapper">
+                        <div
+                          class="ContactPhoto avatar"
+                          style="width: 36px; height: 36px"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="monogram-container"
+                            style="width: 36px; height: 36px"
+                          >
+                            <div aria-hidden="true" class="monogram">
+                              <div class="monogram-text">
+                                <svg viewBox="0 0 28 20">
+                                  <text x="50%" y="75%" text-anchor="middle">
+                                    D
+                                  </text>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <ui-image
+                            class="fade-in no-crop standard is-loaded"
+                            dir="ltr"
+                            style="width: 36px; height: 36px"
+                            ><img
+                              src="./Inviti_files/calendar-icon.png"
+                              draggable="false"
+                              style="pointer-events: none"
+                          /></ui-image>
+                        </div>
+                      </div>
+                      <div class="heading">
+                        <h2>Calendario</h2>
+                        <h3>Appuntamento</h3>
+                      </div></a
+                    >
+                  </div>
+                  <div class="content">
+                    <div class="photos-widget">
+                      <p class="photos-widget-description">
+                        Clicca su "Aggiungi al calendario" per salvare sul
+                        calendario l'evento
+                      </p>
+                      <button
+                        class="material-component material-button action-button"
+                      >
+                        Aggiungi al calendario
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mappe -->
+                <div class="grid-card maps-card with-header" aria-label="Mappe">
+                  <div class="card-background"></div>
+                  <div class="card-header">
+                    <a
+                      class="card-header-content actionable"
+                      href="https://maps.app.goo.gl/dtA3hiPJfBM7TkKZ8"
+                      aria-label="La Veranda del Villeggiante (si apre in una nuova scheda)"
+                      target="_blank"
+                      rel="noreferrer"
+                      >
+                      <div class="icon-wrapper">
+                        <div
+                          class="ContactPhoto avatar"
+                          style="width: 36px; height: 36px"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="monogram-container"
+                            style="width: 36px; height: 36px"
+                          >
+                            <div aria-hidden="true" class="monogram">
+                              <div class="monogram-text">
+                                <svg viewBox="0 0 28 20">
+                                  <text x="50%" y="75%" text-anchor="middle">
+                                    D
+                                  </text>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <ui-image
+                            class="fade-in no-crop standard is-loaded"
+                            dir="ltr"
+                            style="width: 36px; height: 36px"
+                            ><img
+                              src="./Inviti_files/maps.png"
+                              draggable="false"
+                              style="pointer-events: none"
+                          /></ui-image>
+                        </div>
+                      </div>
+                      <div class="heading">
+                        <h2>Mappe</h2>
+                        <h3>La Veranda del Villeggiante</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="content actionable"
+                    role="button"
+                    aria-hidden="true"
+                    tabindex="-1"
+                  >
+                    <a
+                      href="https://maps.app.goo.gl/dtA3hiPJfBM7TkKZ8"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="anchor-content"
+                      tabindex="-1"
+                    >
+                      <div class="location-wrapper">
+                        <div class="location-canvas" aria-hidden="true">
+                          <div
+                            class="location-canvas-content"
+                            id="map-container"
+                          >
+                            <div
+                              class="mk-map-view mk-dark-mode mk-disable-pinch-gestures"
+                              style="position: relative"
+                            >
+                              <canvas
+                                aria-hidden="true"
+                                width="630"
+                                height="514"
+                                style="
+                                  width: 315px;
+                                  height: 257px;
+                                  background-color: rgb(64, 64, 64);
+                                "
+                                class="syrup-canvas"
+                              >
+                              </canvas>
+                              <canvas
+                                class="rt-root"
+                                lang="it-IT"
+                                dir="ltr"
+                                aria-hidden="true"
+                                width="630"
+                                height="514"
+                                style="width: 315px; height: 257px"
+                              >
+                                <canvas hidden="" width="110" height="112">
+                                </canvas>
+                              </canvas>
+                              <div
+                                class="mk-font-size-detector"
+                                aria-hidden="true"
+                                style="
+                                  font-size: initial;
+                                  font-family: sans-serif;
+                                "
+                              ></div>
+                              <div
+                                class="mk-map-node-element"
+                                style="width: 315px; height: 257px"
+                              >
+                                <div
+                                  class="mk-annotation-container mk-dark-mode mk-text-zoom"
+                                  lang="it-IT"
+                                >
+                                  <div slot="mk-slot-232vb2rv"></div>
+                                </div>
+                                <div
+                                  class="mk-controls-container mk-text-zoom mk-color-scheme-dark mk-dark-mode"
+                                  lang="it-IT"
+                                  style="inset: 0px"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                </div>
+                <!-- Meteo -->
+                <div
+                  class="grid-card weather-card out-of-range with-header"
+                  aria-label="Meteo"
+                >
+                  <div class="card-background"></div>
+                  <div class="card-header">
+                    <a class="card-header-content"
+                      ><div class="icon-wrapper">
+                        <div
+                          class="ContactPhoto avatar"
+                          style="width: 36px; height: 36px"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="monogram-container"
+                            style="width: 36px; height: 36px"
+                          >
+                            <div aria-hidden="true" class="monogram">
+                              <div class="monogram-text">
+                                <svg viewBox="0 0 28 20">
+                                  <text x="50%" y="75%" text-anchor="middle">
+                                    D
+                                  </text>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <ui-image
+                            class="fade-in no-crop standard is-loaded"
+                            dir="ltr"
+                            style="width: 36px; height: 36px"
+                            ><img
+                              src="./Inviti_files/meteo.png"
+                              draggable="false"
+                              style="pointer-events: none"
+                          /></ui-image>
+                        </div>
+                      </div>
+                      <div class="heading">
+                        <h2>Meteo</h2>
+                        <h3>Quel giorno</h3>
+                      </div></a
+                    >
+                  </div>
+                  <div class="content">
+                    <p class="date-range-message">
+                      In questo periodo dell’anno, la temperatura varia da 17°C
+                      a 25°C.
+                    </p>
+                  </div>
+                </div>
+              </event-content>
+            </div>
+          </div>
+        </main></ui-main-pane
+      >
+    </div>
+  </body>
+  <app-ls-content ng-version="17.3.7"
+    ><template shadowrootmode="open"
+      ><!----><app-similar-tools _nghost-ng-c2697620354=""
+        ><!----><!----><!----></app-similar-tools
+      ><!----><!----><style>
+        [_nghost-ng-c2697620354] {
+          font-family: Open Sans, sans-serif;
+          color: #121212;
+        }
+      </style></template
+    ></app-ls-content
+  >
+</html>
